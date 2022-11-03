@@ -1,0 +1,18 @@
+.hero{
+    background-image: url('../assets/images/Pink-aquarel.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#portfolio{
+    background-image: url('../assets/images/feuilles.png');
+    background-repeat: no-repeat;
+    background-position: 115% 0;
+    background-size:50%;}
+
+    @media screen and (min-width: 1280px) {
+        #portfolio{
+        background-position: 115% 40%;
+    }
+}

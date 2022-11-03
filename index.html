@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio - Sophie Gillard</title>
+
+    <script type="module" src="./assets/script/script.js" defer></script>
+    <link href="./dist/style.css"  rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300&display=swap" rel="stylesheet">
+
+</head>
+<body class="font-nunito bg-background-light text-slate-50 scroll-smooth" style="font-family: 'Bitter', serif;">
+
+    <!-- NAVIGATION -->
+    <nav class="rounded-md sticky top-0 z-50 bg-background-light opacity-80" aria-label="Main">
+        <!--desktop menu-->
+
+        <ul class="hidden lg:flex
+                h-10 mx-auto py-10 px-28 text-xl
+                flex justify-between items-center">
+
+            <li class="text-black text-4xl" style="font-family: 'Water Brush', cursive;">
+                <a href="#home" class="px-3">Sophie Gillard</a>
+            </li>
+
+            <li class="flex flex-row xl:gap-10 uppercase ">
+                <ul class="text-slate-400 hover:text-font-title-cart hover:font-bold">
+                    <a href="#about" class="px-3">About</a>
+                </ul>
+
+                <ul class="text-slate-400 hover:text-font-title-cart hover:font-bold">
+                    <a href="#portfolio" class="px-3">Portfolio</a>
+                </ul>
+
+                <ul class="text-slate-400 hover:text-font-title-cart hover:font-bold">
+                    <a href="#contact" class="px-3">Contact</a>
+                </ul>
+            </li>
+
+            <li class="flex flex-row">
+                <ul class="social_li">
+                    <a class="social_a text-4xl" href ="mailto: sophie.x.gillard@gmail.com">
+                        <i class="fa-sharp fa-solid fa-envelope social_i"></i>
+                    </a>
+                </ul>
+                <ul class="social_li">
+                    <a class="social_a text-4xl" href="./assets/file/CV%20Sophie%20Gillard%20WEB%20DEV_FR_%2010.2022.pdf" download>
+                        <i class="fa-solid fa-user social_i"></i>
+                    </a>
+                </ul>
+            </li>
+
+        </ul>
+
+        <!--mobile button menu goes here-->
+        <div class="lg:hidden flex items-center
+                h-5 md:h-16 py-7
+                flex justify-between px-7">
+            <a href="#home" class="text-black text-4xl" style="font-family: 'Water Brush', cursive;">Sophie Gillard</a>
+
+            <button id="mobile-menu-button">
+                <img src="./assets/images/menu.png" alt="menu phone" class="w-10 h-10">
+            </button>
+
+        </div>
+        <!--mobile menu-->
+        <div id="mobile-menu" class="hidden lg:hidden text-2xl text-font-main-color">
+            <a href="#about" class="selectMenu flex py-4 px-4  justify-center hover:text-3xl hover:bg-icon-color">About</a>
+            <a href="#portfolio" class="selectMenu flex py-4 px-4  justify-center   hover:text-3xl hover:bg-icon-color">Portfolio</a>
+            <a href="#contact" class="selectMenu flex py-4 px-4  justify-center  hover:text-3xl hover:bg-icon-color">Contact</a>
+            <a href="./assets/file/CV%20Sophie%20Gillard%20WEB%20DEV_FR_%2010.2022.pdf" class="selectMenu flex py-4 px-4  justify-center text-icon-color hover:text-3xl" download>Download my CV</a>
+        </div>
+    </nav>
+
+    <!--HEADER-->
+    <header class="hero shadow-lg h-screen" id="home">
+
+       <section class="header px-10 lg:px-20 xl:py-40 2xl:px-40 3xl:px-72 3xl:py-36 sm:py-10 lg:py-40 xl:py-46">
+           <!--Content user intro-->
+            <div class="flex flex-col-reverse lg:flex-row justify-between
+               relative text-center text-font-main-color text-3xl s:pt-16">
+
+                <div class="lg:w-[50%] flex flex-col justify-between py-8 ">
+                    <div class="intro__container text-xl lg:text-3xl xl:text-3xl 2xl:text-4xl">
+                        <p class="py-4  leading-relaxed md:leading-[5rem] lg:leading-[3rem]">Are you looking for a highly motivated and conscientious Front-End Web Developer intern?</p>
+                        <p class="py-4 xl:py-6 italic">Well, stop here. I'm your intern!</p>
+                    </div>
+
+
+                    <div class="header__section__socialMedia">
+                        <div class="flex justify-center mr-48  py-3 lg:py-10">
+                            <img src="./assets/images/contact_me.png" alt="contact_me"
+                            class="h-20 max-w-none w-42 mt-10 md:h-36">
+                        </div>
+                        <div class="social__container -mt-14 md:-mt-20">
+                            <ul class="flex row justify-center">
+                                <li class="social_li">
+                                    <a class="social_a text-4xl" href ="mailto: sophie.x.gillard@gmail.com">
+                                        <i class="fa-sharp fa-solid fa-envelope social_i"></i>
+                                    </a>
+                                </li>
+                                <li class="social_li">
+                                    <a class="social_a" href="https://www.linkedin.com/in/sophie-gillard/" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa-brands fa-linkedin-in social_i"></i>
+                                    </a>
+                                </li>
+                                <li class="social_li">
+                                    <a class="social_a" href="https://github.com/sophiegillard" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa-brands fa-github social_i"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo_SOPHIE flex justify-center lg:pt-20 xl:pt-20">
+                    <img src="./assets/images/Photo%20Sophie.jpeg" alt="Sophie Gillard"
+                         class="header__section__picture__src
+                        rounded-full aspect-square object-cover -rotate-20 object-top
+                        bg-gradient-to-r from-black to-black h-[300px] lg:h-[350px] xl:h-[450px]
+                        "
+                         style="border-radius: 38% 62% 70% 30% / 30% 29% 71% 70% ">
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+    </header>
+
+    <main>
+
+        <!-- SECTION ABOUT-->
+           <section id="about" class="section__about  pt-10 lg:px-10 xl:px-20" style="font-family: 'Bitter', serif;">
+               <div class="aboutMe pt-12 lg:pt-24 p-6">
+
+                   <div class="container_title bg-gradient-to-t pl-[6px]  from-icon-color to-accent">
+                       <h3 class="text-4xl bg-background-light px-4 text-black">About Me</h3>
+                   </div>
+
+                   <div class="w-full ">
+                       <div class="text-justify flex flex-col-reverse md:flex-row justify-center py-8 md:py-2 ">
+                           <div class="md:w-[70%] md:py-4 text-2xl text-font-main-color leading-relaxed">
+                               <p class="py-4 ">Let me introduce myself. My name is Sophie. Former commercial assistant, I am now taking a new career orientation by pursuing a programming cursus of web development at Becode.</p>
+                               <p class="py-4 ">I found myself getting immediately passionated about this whole new world. I thrive on challenges and approach each day with curiosity and optimism.</p>
+                               <p class="py-4 ">I’m currently doing my first steps in code and I find myself improving quite fast. The Becode training teaches me to be more self-educated, to take initiatives, to help each other and to share my knowledge.</p>
+                           </div>
+                           <div class="relative md:w-1/2 lg:w-1/2 2xl:w-1/3 flex flex justify-center items-center">
+                               <img src="./assets/images/Watercolor-Art-PNG-Transparent-Image.png" class="max-w-[90%]" >
+                               <p class="text-black text-4xl md:text-3xl md:-rotate-6 lg:text-4xl top-[30%] md:top-[45%] xl:top-[40%]" style="position: absolute; font-family: 'Water Brush', cursive;">Welcome on my Portfolio</p>
+                               <p class="text-black text-4xl md:text-3xl md:-rotate-6 lg:text-5xl" style="position: absolute; top: 53%; font-family: 'Water Brush', cursive;">I'm Sophie Gillard</p>
+                           </div>
+                       </div>
+
+                       <div class="text-justify flex flex-col-reverse md:flex-row-reverse items-center w-full ">
+                           <div class=" text-2xl text-black">
+                               <p class="text-2xl font-bold leading-relaxed">Today, I am looking for a 3-months internship, starting February 2023, to take the next step-in this great adventure. I am aware that the lack of experience could be an obstacle. However, I am willing to engage myself in learning new languages to be ready to start my internship successfully.</p>
+                               <p class="py-4 leading-relaxed">Moreover, with my cheerful and energetic nature I am able to combine good humor and concentration.</p>
+                               <p class="py-4 leading-relaxed">I would be glad to meet you. Don't hesitate to contact me ! </p>
+                           </div>
+                           <div class="flex justify-center pr-28 ">
+                               <p class="font-cursive text-black text-6xl w-1/4 md:w-1/2 -rotate-6 text-center py-6 xl:pr-28" style="font-family: 'Water Brush', cursive;">
+                                   Internship Wanted</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+
+              <div class="skills__container rounded-md mt-8 relative flex flex-row justify-center h-[340px] sm:h-[290px] md:h-[200px] xl:h-[300px]">
+                   <img src="./assets/images/long-aquarel.png" class="absolute z-0 opacity-40 h-full sm:h-4/6 object-cover md:object-fill  md:w-full"/>
+                   <div class="skills max-w-3xl mx-auto  py-4 lg:max-w-7xl  flex flex-wrap justify-center gap-6
+                    text-center absolute z-40 md:top-6 text-black p-6 md:p-1">
+                       <div class="Html
+                          h-20
+                         flex flex-col justify-center items-center ">
+                           <img src="./assets/images/html.png" alt="html"
+                           class="w-8 pb-2">
+                           <p class="uppercase font-bold text-l">HTML</p>
+                       </div>
+
+                       <div class="CSS
+                         h-20
+                         flex flex-col justify-center items-center ">
+                           <img src="./assets/images/css-3.png" alt="css"
+                                class="w-8 pb-2">
+                           <p class="uppercase font-bold text-l">CSS</p>
+                       </div>
+
+                       <div class="SASS
+                        h-20
+                         flex flex-col justify-center items-center ">
+                           <img src="./assets/images/sass.png" alt="SASS"
+                                class="w-8 pb-2">
+                           <p class="uppercase font-bold text-l">SASS</p>
+                       </div>
+
+                       <div class="Tailwind
+                        h-20
+                         flex flex-col justify-center items-center ">
+                           <img src="./assets/images/tailwind.png" alt="Tailwind"
+                                class="w-8 pb-2">
+                           <p class="uppercase font-bold text-l">Tailwind</p>
+                       </div>
+
+                       <div class="Javascript
+                         h-20
+                         flex flex-col justify-center items-center ">
+                           <img src="./assets/images/js.png" alt="Javascript"
+                                class=" pb-2 h-10">
+                           <p class="uppercase font-bold text-l">Javascript</p>
+                       </div>
+
+                       <div class="React
+                         h-20
+                         flex flex-col justify-center items-center ">
+                           <img src="./assets/images/atom.png" alt="React"
+                                class="w-8 pb-2">
+                           <p class="uppercase font-bold text-l">React</p>
+                       </div>
+
+                       <div class="PHP
+                         h-20
+                         flex flex-col justify-center items-center ">
+                           <img src="./assets/images/php.png" alt="PHP"
+                                class="w-8 pb-2">
+                           <p class="uppercase font-bold text-l">PHP</p>
+                       </div>
+
+                       <div class="Mysql
+                         h-20
+                         flex flex-col justify-center items-center ">
+                           <img src="./assets/images/mysql.png" alt="Mysql"
+                                class="w-8 pb-2">
+                           <p class="uppercase font-bold text-l">Mysql</p>
+                       </div>
+
+                       <div class="figma
+                         h-20
+                         flex flex-col justify-center items-center ">
+                           <img src="./assets/images/figma.png" alt="figma"
+                                class="w-8 pb-2">
+                           <p class="uppercase font-bold text-l">figma</p>
+                       </div>
+
+                       <div class="git
+                        h-20
+                         flex flex-col justify-center items-center ">
+                           <img src="./assets/images/git.png" alt="git"
+                                class="w-8 pb-2">
+                           <p class="uppercase font-bold text-l">git</p>
+                       </div>
+                   </div>
+              </div>
+
+           </section>
+
+
+        <!-- SECTION Portfolio-->
+           <section id="portfolio" class="section__portfolio p-6 md:p-10  lg:px-10 xl:px-20 min-w-full text-font-main-color  shadow-lg
+            ">
+                <div class="portfolio pt-12 lg:pt-24 p-6">
+                    <div class="container_title bg-gradient-to-t pl-[6px] from-icon-color to-accent mb-12 w-fit">
+                        <h3 class="text-4xl bg-background-light px-4 ">Portfolio</h3>
+                    </div>
+
+                    <div class="relative mx-auto gap-6 m-9 flex flex-col justify-between flex-wrap
+                    lg:flex-row 2xl:pb-6 xl:w-[90%] 2xl:w-[98%] 3xl:w-[99%]">
+
+                        <div class="slide relative shadow-lg">
+                            <div class=" lg:w-[30rem] xl:w-[27rem]  rounded-lg border border-white">
+                                <a href="https://bc-cogip-project.000webhostapp.com/">
+                                    <img class="rounded-t-lg h-60 w-full object-cover grayscale hover:grayscale-0" src="./assets/images/cogip.png" alt="" />
+                                </a>
+                                <div class="p-5 h-44 bg-white">
+                                    <a href="https://bc-cogip-project.000webhostapp.com/">
+                                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-font-main-color">COPIP PROJECT</h5>
+                                    </a>
+                                    <p class="mb-3 font-normal text-font-title-cart">Student project | Group work</p>
+                                    <p class="mb-3 font-normal dark:text-neutral-400">Website designed to manage the invoices, customers & contacts of a company.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="slide relative shadow-lg">
+                            <div class="lg:w-[30rem] xl:w-[27rem]  rounded-lg border border-white">
+                                <a href="https://sophiegillard.github.io/card_collection_SG/">
+                                    <img class="rounded-t-lg h-60 w-full object-cover grayscale hover:grayscale-0" src="./assets/images/recipe_collection.png" alt="" />
+                                </a>
+                                <div class="p-5 h-44 bg-white">
+                                    <a href="https://sophiegillard.github.io/card_collection_SG/">
+                                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-font-main-color">RECIPE COLLECTION</h5>
+                                    </a>
+                                    <p class="mb-3 font-normal text-font-title-cart">Student project | Solo work</p>
+                                    <p class="mb-3 font-normal dark:text-neutral-400">Website of recipes realized with JavaScript, HTML and SCSS.</p>                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide relative shadow-lg">
+                            <div class="lg:w-[30rem] xl:w-[27rem]   rounded-lg border border-white">
+                                <a href="https://sophiegillard.github.io/Calculator/">
+                                    <img class="rounded-t-lg h-60 w-full object-cover grayscale hover:grayscale-0" src="./assets/images/calculator.png" alt="" />
+                                </a>
+                                <div class="p-5 h-44 bg-white">
+                                    <a href="https://sophiegillard.github.io/Calculator/">
+                                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-font-main-color">CALCULATOR</h5>
+                                    </a>
+                                    <p class="mb-3 font-normal text-font-title-cart">Student project | Solo work</p>
+                                    <p class="mb-3 font-normal dark:text-neutral-400">Calculator realized with JavaScript, HTML and SCSS.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide relative shadow-lg">
+                            <div class="lg:w-[30rem] xl:w-[27rem]  rounded-lg border border-white">
+                                <a href="https://reclamationform.000webhostapp.com/index.php">
+                                    <img class="rounded-t-lg h-60 w-full object-cover grayscale hover:grayscale-0" src="./assets/images/reclamation_form.png" alt="" />
+                                </a>
+                                <div class="p-5 h-44 bg-white">
+                                    <a href="https://reclamationform.000webhostapp.com/index.php">
+                                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-font-main-color">CONTACT FORM</h5>
+                                    </a>
+                                    <p class="mb-3 font-normal text-font-title-cart">Student project | Solo work</p>
+                                    <p class="mb-3 font-normal dark:text-neutral-400">Contact reclamation form realized with HTML, SCSS and PHP.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </section>
+
+
+        <!-- SECTION Contact-->
+           <section id="contact" class="section__contact p-6 md:p-10   lg:px-10 xl:px-20  pb-26  sm:h-[90%]">
+               <div class="contact pt-12 lg:pt-24 p-6">
+                   <div class="container_title bg-gradient-to-t pl-[6px] from-icon-color to-accent mb-12">
+                       <h3 class="text-4xl bg-background-light px-4 text-black ">Contact me</h3>
+                   </div>
+               </div>
+
+               <div class="section__socialMedia flex flex-col xl:align-middle md:flex-row">
+
+                   <div class="relative flex justify-center md:w-1/2">
+                       <img src="./assets/images/circle_contact.png" class="sm:max-w-[85%] 2xl:max-w-[70%] 3xl:max-w-[50%]"/>
+                       <p class="text-black text-4xl xl:text-7xl -rotate-15 top-[40%]" style="position: absolute; font-family: 'Water Brush', cursive;">Get in Touch</p>
+                   </div>
+
+                   <div class="social__container text-font-main-color flex align-middle xl:pl-24 justify-center">
+                       <ul class="flex justify-center flex-col align-middle">
+                           <li class="social_li">
+                               <a class="social_a text-4xl flex flex-row gap-4" href ="mailto: sophie.x.gillard@gmail.com">
+                                   <i class="fa-sharp fa-solid fa-envelope social_i"></i>
+                                   <p class="text-lg py-4">sophie.x.gillard@gmail.com</p>
+                               </a>
+                           </li>
+                           <li class="social_li">
+                               <a class="social_a text-4xl flex flex-row gap-4" href="https://www.linkedin.com/in/sophie-gillard/" target="_blank" rel="noopener noreferrer">
+                                   <i class="fa-brands fa-linkedin-in social_i"></i>
+                                   <p class="text-lg py-1 xl:py-4">linkedin.com/in/sophie-gillard</p>
+                               </a>
+                           </li>
+                           <li class="social_li">
+                               <a class="social_a text-4xl flex flex-row gap-4" href="https://github.com/sophiegillard" target="_blank" rel="noopener noreferrer">
+                                   <i class="fa-brands fa-github social_i"></i>
+                                   <p class="text-lg py-4">github.com/sophiegillard</p>
+                               </a>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+
+           </section>
+
+    </main>
+
+    <footer class="p-8 bg-icon-color rounded-lg shadow md:px-6 md:py-8 text-center bottom-14 w-screen">
+        <span class="block text-sm sm:text-center ">© 2022 Sophie Gillard | All Rights Reserved.
+    </span>
+    </footer>
+
+</body>
+</html>
