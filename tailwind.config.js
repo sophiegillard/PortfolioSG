@@ -35,20 +35,21 @@ module.exports = {
         'aquarel-border': "url('../assets/images/aquarelBorder.jpg')"
       },
       rotate: {
-        '20': '30deg',
+        '20': '30deg'
       },
       margin: {
-        '120px': '120px',
+        '120px': '120px'
       },
       spacing: {
-        '160px' : '160px',
+        '160px' : '160px'
       },
       screens: {
         's': '400px',
-        '3xl' : '1900px',
+        'l': '1025px',
+        '3xl' : '1900px'
       },
       height:{
-        'h-94vh' : '94vh',
+        'h-94vh' : '94vh'
       }
     },
   }
