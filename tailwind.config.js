@@ -24,6 +24,8 @@ module.exports = {
         'gradient-first':'#DCF8EF',
         'gradient-second':'#FEE2F8',
         'background-light':'#FFF9F9',
+        'background-via':'rgb(255,249,249)',
+        'background-shade':'rgba(255,249,249,0.74)',
         'green-pastel':'#7dc06b',
         'pink-pastel':'#fff1f4',
         'yellow-pastel':'#FAF4B7',
