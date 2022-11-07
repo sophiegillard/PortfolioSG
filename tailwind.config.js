@@ -49,6 +49,7 @@ module.exports = {
         's': '400px',
         'l': '920px',
         '3xl' : '1900px'
+
       },
       height:{
         'h-94vh' : '94vh'

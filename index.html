@@ -6,6 +6,10 @@
 
     <title>Portfolio - Sophie Gillard</title>
 
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <script type="module" src="./assets/script/script.js" defer></script>
     <link href="./dist/style.css"  rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
@@ -16,7 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300&display=swap" rel="stylesheet">
 
 </head>
-<body class="font-nunito bg-background-light text-slate-50 scroll-smooth" style="font-family: 'Bitter', serif;">
+<body class="font-nunito bg-background-light text-slate-50 scroll-smooth max-w-screen" style="font-family: 'Bitter', serif;">
 
     <!-- NAVIGATION -->
     <nav class="rounded-md sticky top-0 z-50 shadow-lg bg-gradient-to-b  from-background-light via-background-via to-background-shade" aria-label="Main">
@@ -31,15 +35,15 @@
             </li>
 
             <li class="flex flex-row xl:gap-10 uppercase ">
-                <ul class="text-slate-400 hover:text-font-title-cart hover:font-bold">
+                <ul class="text-slate-400 hover:text-icon-color hover:font-bold">
                     <a href="#about" class="px-3">About</a>
                 </ul>
 
-                <ul class="text-slate-400 hover:text-font-title-cart hover:font-bold">
+                <ul class="text-slate-400 hover:text-icon-color hover:font-bold">
                     <a href="#portfolio" class="px-3">Portfolio</a>
                 </ul>
 
-                <ul class="text-slate-400 hover:text-font-title-cart hover:font-bold">
+                <ul class="text-slate-400 hover:text-icon-color hover:font-bold">
                     <a href="#contact" class="px-3">Contact</a>
                 </ul>
             </li>
@@ -82,36 +86,39 @@
     <!--HEADER-->
     <header class="hero shadow-lg h-screen" id="home">
 
-       <section class="header px-10 md:px-28 lg:py-36 xl:py-20 2xl:px-40 3xl:px-72 3xl:py-36 sm:py-10 md:py-0  xl:py-46">
+       <section class="header px-10 md:px-28  xl:py-20 2xl:px-56 3xl:px-72 3xl:py-36 sm:py-10 md:py-0  xl:py-46">
            <!--Content user intro-->
             <div class="flex flex-col-reverse lg:flex-row justify-between
-               relative text-center text-font-main-color text-3xl pt-6 s:pt-16 lg:pt-0">
+               relative text-font-main-color text-3xl pt-6 s:pt-16 lg:pt-0 tall:pt-14">
 
-                <div class="lg:w-[50%] flex flex-col justify-between py-8 sm:pt-20 md:pt-6">
-                    <div class="intro__container text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl">
-                        <p class="py-4  leading-relaxed md:leading-[3rem] lg:leading-[3rem]">Are you looking for a highly motivated and conscientious Front-End Web Developer intern?</p>
-                        <p class="pt-4 s:py-4 xl:py-6 italic">Well, stop here. I'm your intern!</p>
+                <div class="lg:w-[50%] flex flex-col  py-8 sm:pt-20 ">
+                    <div class="intro__container text-center lg:text-left text-xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl">
+                        <p class="py-4 font-bold  leading-relaxed md:leading-[3rem] lg:leading-[3rem]
+                        animate__animated animate__fadeInLeft animate__delay-1s">Are you looking for a highly motivated and conscientious Front-End Web Developer intern?</p>
+                        <p class="pt-4  s:py-4 xl:py-6 italic tall:text-3xl
+                        animate__animated animate__fadeInLeft animate__delay-3s">Well, stop here. I'm your intern!</p>
                     </div>
 
 
-                    <div class="header__section__socialMedia">
-                        <div class="flex justify-center mr-48  py-3 lg:py-10">
+                    <div class="header__section__socialMedia
+                    animate__animated animate__fadeInLeft animate__delay-4s">
+                        <div class="flex  mr-48  py-3 lg:py-6">
                             <img src="./assets/images/contact_me.png" alt="contact_me"
                             class="h-20 max-w-none w-42 mt-10 md:h-32 lg:mt-0 lg:h-20 xl:h-28">
                         </div>
-                        <div class="social__container -mt-14 md:-mt-20">
-                            <ul class="flex row justify-center">
-                                <li class="social_li">
+                        <div class="social__container -mt-14 md:-mt-20 ">
+                            <ul class="flex row pl-6 md:pl-8">
+                                <li class="social_li md:m-4">
                                     <a class="social_a text-4xl" href ="mailto: sophie.x.gillard@gmail.com">
                                         <i class="fa-sharp fa-solid fa-envelope social_i"></i>
                                     </a>
                                 </li>
-                                <li class="social_li">
+                                <li class="social_li md:m-4">
                                     <a class="social_a" href="https://www.linkedin.com/in/sophie-gillard/" target="_blank" rel="noopener noreferrer">
                                         <i class="fa-brands fa-linkedin-in social_i"></i>
                                     </a>
                                 </li>
-                                <li class="social_li">
+                                <li class="social_li md:m-4">
                                     <a class="social_a" href="https://github.com/sophiegillard" target="_blank" rel="noopener noreferrer">
                                         <i class="fa-brands fa-github social_i"></i>
                                     </a>
@@ -125,8 +132,7 @@
                          class="header__section__picture__src
                         rounded-full aspect-square object-cover -rotate-20 object-top
                         bg-gradient-to-r from-black to-black h-[200px] s:h-[300px] lg:h-[350px] xl:h-[450px]
-                        "
-                         style="border-radius: 38% 62% 70% 30% / 30% 29% 71% 70% ">
+                        "style="border-radius: 38% 62% 70% 30% / 30% 29% 71% 70%;">
                 </div>
 
             </div>
@@ -140,7 +146,7 @@
     <main>
 
         <!-- SECTION ABOUT-->
-           <section id="about" class="section__about  pt-10 s:p-6 lg:px-10 xl:px-20" style="font-family: 'Bitter', serif;">
+           <section id="about" class="section__about  pt-10 s:p-6 lg:px-10 xl:px-20 3xl:px-32" style="font-family: 'Bitter', serif;">
                <div class="aboutMe pt-12 lg:pt-24 p-6">
 
                    <div class="container_title bg-gradient-to-t pl-[6px]  from-icon-color to-accent">
@@ -149,7 +155,8 @@
 
                    <div class="w-full ">
                        <div class="text-justify flex flex-col-reverse md:flex-row justify-center py-8 md:py-2 ">
-                           <div class="md:w-[70%] md:py-4 text-xl text-font-main-color leading-relaxed">
+                           <div class="md:w-[70%] md:py-4 text-xl text-font-main-color leading-relaxed
+">
                                <p class="py-4 ">Let me introduce myself. My name is Sophie. Former commercial assistant, I am now taking a new career orientation by pursuing a programming cursus of web development at Becode.</p>
                                <p class="py-4 ">I found myself getting immediately passionated about this whole new world. I thrive on challenges and approach each day with curiosity and optimism.</p>
                                <p class="py-4 ">I’m currently doing my first steps in code and I find myself improving quite fast. The Becode training teaches me to be more self-educated, to take initiatives, to help each other and to share my knowledge.</p>
@@ -168,7 +175,9 @@
                                <p class="py-4 leading-relaxed">I would be glad to meet you. Don't hesitate to contact me ! </p>
                            </div>
                            <div class="flex justify-center pr-28 ">
-                               <p class="font-cursive text-black text-6xl w-1/4 md:w-1/2 -rotate-6 text-center py-6 xl:pr-28" style="font-family: 'Water Brush', cursive;">
+                               <p class="font-cursive text-black text-6xl w-1/4 md:w-1/2 -rotate-6 text-center py-6 xl:pr-28
+                                   animate__animated animate__pulse animate__infinite animate__slower
+                                " style="font-family: 'Water Brush', cursive;">
                                    Internship Wanted</p>
                            </div>
                        </div>
@@ -265,7 +274,7 @@
 
 
         <!-- SECTION Portfolio-->
-           <section id="portfolio" class="section__portfolio s:p-6  pt-10 lg:px-10 xl:px-20 min-w-full text-font-main-color  shadow-lg
+           <section id="portfolio" class="section__portfolio s:p-6  pt-10 lg:px-10 xl:px-20 3xl:px-32 min-w-full text-font-main-color  shadow-lg
             ">
                 <div class="portfolio pt-10 lg:pt-24 p-6">
                     <div class="container_title bg-gradient-to-t pl-[6px] from-icon-color to-accent mb-12 w-fit">
@@ -341,7 +350,7 @@
 
 
         <!-- SECTION Contact-->
-           <section id="contact" class="section__contact s:p-6  lg:px-10 xl:px-20  pb-26 pt-10 sm:h-[90%]">
+           <section id="contact" class="section__contact s:p-6  lg:px-10 xl:px-20 3xl:px-32  pb-26 pt-10 sm:h-[90%]">
                <div class="contact pt-10 lg:pt-24 p-6">
                    <div class="container_title bg-gradient-to-t pl-[6px] from-icon-color to-accent mb-12">
                        <h3 class="text-4xl bg-background-light px-4 text-black ">Contact me</h3>
@@ -356,7 +365,7 @@
                    </div>
 
                    <div class="social__container text-font-main-color flex align-middle xl:pl-24 justify-center">
-                       <ul class="flex justify-center flex-col align-middle">
+                       <ul class="flex justify-center flex-col align-middle pb-6">
                            <li class="social_li">
                                <a class="social_a text-4xl flex flex-row gap-4" href ="mailto: sophie.x.gillard@gmail.com">
                                    <i class="fa-sharp fa-solid fa-envelope social_i"></i>
