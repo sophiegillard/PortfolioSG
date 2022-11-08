@@ -14,6 +14,7 @@ module.exports = {
       },
       colors: {
         'icon-color': '#B58ECC',
+        'icon-color-shade': 'rgba(202,150,234,0.21)',
         'accent': '#002A8F',
         'bluefade': '#0043E0',
         'gradient': '#00B5F5',

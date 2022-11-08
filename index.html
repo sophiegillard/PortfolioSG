@@ -23,12 +23,11 @@
 <body class="font-nunito bg-background-light text-slate-50 scroll-smooth max-w-screen" style="font-family: 'Bitter', serif;">
 
     <!-- NAVIGATION -->
-    <nav class="rounded-md sticky top-0 z-50 shadow-lg bg-gradient-to-b  from-background-light via-background-via to-background-shade" aria-label="Main">
+    <nav class="rounded-md  top-0 z-50 shadow-lg fixed z-90 max-w-screen w-full
+    bg-background-light  lg:bg-transparent lg:bg-gradient-to-b  lg:from-background-light lg:via-background-via lg:to-background-shade" aria-label="Main">
         <!--desktop menu-->
 
-        <ul class="hidden lg:flex
-                h-10 mx-auto py-10 px-28 text-xl
-                flex justify-between items-center">
+        <ul class="hidden lg:flex text-xl flex justify-between items-center max-w-screen-2xl my-0 mx-auto px-8">
 
             <li class="text-black text-4xl" style="font-family: 'Water Brush', cursive;">
                 <a href="#home" class="px-3">Sophie Gillard</a>
@@ -54,9 +53,9 @@
                         <i class="fa-sharp fa-solid fa-envelope social_i"></i>
                     </a>
                 </ul>
-                <ul class="social_li">
-                    <a class="social_a text-4xl" href="./assets/file/CV%20Sophie%20Gillard%20WEB%20DEV_FR_%2010.2022.pdf" download>
-                        <i class="fa-solid fa-user social_i"></i>
+                <ul class="social_li" >
+                    <a class="flex content-[' '] w-[60px] h-[60px] " href="./assets/file/CV%20Sophie%20Gillard%20WEB%20DEV_FR_%2010.2022.pdf" download>
+                        <img src="./assets/images/cv.png" alt="CV icon" class="absolute top-[1px]">
                     </a>
                 </ul>
             </li>
@@ -64,9 +63,7 @@
         </ul>
 
         <!--mobile button menu goes here-->
-        <div class="lg:hidden flex items-center
-                h-5 md:h-16 py-7
-                flex justify-between px-7">
+        <div class="lg:hidden flex items-center py-7 justify-between px-7">
             <a href="#home" class="text-black text-4xl" style="font-family: 'Water Brush', cursive;">Sophie Gillard</a>
 
             <button id="mobile-menu-button">
@@ -75,10 +72,13 @@
 
         </div>
         <!--mobile menu-->
-        <div id="mobile-menu" class="hidden lg:hidden text-2xl text-font-main-color">
-            <a href="#about" class="selectMenu flex py-4 px-4  justify-center hover:text-3xl hover:bg-icon-color">About</a>
-            <a href="#portfolio" class="selectMenu flex py-4 px-4  justify-center   hover:text-3xl hover:bg-icon-color">Portfolio</a>
-            <a href="#contact" class="selectMenu flex py-4 px-4  justify-center  hover:text-3xl hover:bg-icon-color">Contact</a>
+        <div id="mobile-menu" class="hidden lg:hidden text-2xl text-font-main-color fixed z-90
+             max-w-screen w-full
+             bg-gradient-to-b from-background-light via-background-via to-background-shade"
+             style="transition: all 0.3s linear;">
+            <a href="#about" class="selectMenu flex py-4 px-4  justify-center  hover:bg-icon-color-shade">About</a>
+            <a href="#portfolio" class="selectMenu flex py-4 px-4  justify-center    hover:bg-icon-color-shade">Portfolio</a>
+            <a href="#contact" class="selectMenu flex py-4 px-4  justify-center   hover:bg-icon-color-shade">Contact</a>
             <a href="./assets/file/CV%20Sophie%20Gillard%20WEB%20DEV_FR_%2010.2022.png" class="selectMenu flex py-4 px-4  justify-center text-icon-color hover:text-3xl" download>Download my CV</a>
         </div>
     </nav>
@@ -286,11 +286,11 @@
 
                         <div class="slide relative shadow-lg">
                             <div class="md:w-[20rem] l:w-[26rem] lg:w-[20rem] xl:w-[21rem]  rounded-lg border border-white">
-                                <a href="https://bc-cogip-project.000webhostapp.com/">
+                                <a href="https://bc-cogip-project.000webhostapp.com/" target="_blank">
                                     <img class="rounded-t-lg h-60 w-full object-cover grayscale hover:grayscale-0" src="./assets/images/cogip.png" alt="" />
                                 </a>
                                 <div class="p-5 h-44 bg-white">
-                                    <a href="https://bc-cogip-project.000webhostapp.com/">
+                                    <a href="https://bc-cogip-project.000webhostapp.com/" target="_blank">
                                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-font-main-color">COPIP PROJECT</h5>
                                     </a>
                                     <p class="mb-3 font-normal text-font-title-cart">Student project | Group work</p>
@@ -302,11 +302,11 @@
 
                         <div class="slide relative shadow-lg">
                             <div class="md:w-[20rem] l:w-[26rem] lg:w-[20rem] xl:w-[21rem]  rounded-lg border border-white">
-                                <a href="https://sophiegillard.github.io/card_collection_SG/">
+                                <a href="https://sophiegillard.github.io/card_collection_SG/" target="_blank">
                                     <img class="rounded-t-lg h-60 w-full object-cover grayscale hover:grayscale-0" src="./assets/images/recipe_collection.png" alt="" />
                                 </a>
                                 <div class="p-5 h-44 bg-white">
-                                    <a href="https://sophiegillard.github.io/card_collection_SG/">
+                                    <a href="https://sophiegillard.github.io/card_collection_SG/" target="_blank">
                                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-font-main-color">RECIPE COLLECTION</h5>
                                     </a>
                                     <p class="mb-3 font-normal text-font-title-cart">Student project | Solo work</p>
@@ -316,11 +316,11 @@
 
                         <div class="slide relative shadow-lg">
                             <div class=" md:w-[20rem] l:w-[26rem] lg:w-[20rem] xl:w-[21rem]   rounded-lg border border-white">
-                                <a href="https://sophiegillard.github.io/Calculator/">
+                                <a href="https://sophiegillard.github.io/Calculator/" target="_blank">
                                     <img class="rounded-t-lg h-60 w-full object-cover grayscale hover:grayscale-0" src="./assets/images/calculator.png" alt="" />
                                 </a>
                                 <div class="p-5 h-44 bg-white">
-                                    <a href="https://sophiegillard.github.io/Calculator/">
+                                    <a href="https://sophiegillard.github.io/Calculator/" target="_blank">
                                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-font-main-color">CALCULATOR</h5>
                                     </a>
                                     <p class="mb-3 font-normal text-font-title-cart">Student project | Solo work</p>
@@ -332,11 +332,11 @@
 
                         <div class="slide relative shadow-lg">
                             <div class="md:w-[20rem] l:w-[26rem] lg:w-[20rem] xl:w-[21rem]  rounded-lg border border-white">
-                                <a href="https://reclamationform.000webhostapp.com/index.php">
+                                <a href="https://reclamationform.000webhostapp.com/index.php" target="_blank">
                                     <img class="rounded-t-lg h-60 w-full object-cover grayscale hover:grayscale-0" src="./assets/images/reclamation_form.png" alt="" />
                                 </a>
                                 <div class="p-5 h-44 bg-white">
-                                    <a href="https://reclamationform.000webhostapp.com/index.php">
+                                    <a href="https://reclamationform.000webhostapp.com/index.php" target="_blank">
                                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-font-main-color">CONTACT FORM</h5>
                                     </a>
                                     <p class="mb-3 font-normal text-font-title-cart">Student project | Solo work</p>
@@ -392,7 +392,7 @@
 
     </main>
 
-    <footer class="p-8 bg-icon-color rounded-lg shadow md:px-6 md:py-8 text-center bottom-14 w-screen">
+    <footer class="p-8 bg-icon-color rounded-lg shadow md:px-6 md:py-8 text-center bottom-14">
         <span class="block text-sm sm:text-center ">© 2022 Sophie Gillard | All Rights Reserved.
     </span>
     </footer>
