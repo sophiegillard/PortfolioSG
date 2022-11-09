@@ -5,15 +5,41 @@
     background-size: cover;
 }
 
-#portfolio{
+main{
     background-image: url('../assets/images/feuilles.png');
     background-repeat: no-repeat;
-    background-position: 115% 0;
-    background-size:50%;}
+    background-position: 40% 46%;
+    background-size:140%;}
+
+    @media screen and (min-width: 760px) {
+        main{
+            background-position:2% 55%;
+            background-size:120%;
+        }}
+
+    @media screen and (min-width: 1010px) {
+        main{
+            background-position: 166% 49%;
+            background-size:80%;
+        }}
+
 
     @media screen and (min-width: 1280px) {
-        #portfolio{
-        background-position: 115% 40%;
-    }
-}
+        main{
+        background-position: 125% 53%;
+            background-size:60%;
+    } }
+
+
+    @media screen and (min-width: 1540px) {
+        main{
+            background-position: 123% 53%;
+            background-size:56%;
+        }}
+
+@media screen and (min-width: 1900px) {
+    main{
+        background-position: 107% 40%;
+        background-size:30%;
+    }}
 

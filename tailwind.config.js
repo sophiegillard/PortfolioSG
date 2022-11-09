@@ -49,7 +49,7 @@ module.exports = {
       screens: {
         's': '400px',
         'l': '920px',
-        '3xl' : '1900px'
+        '3xl' : '2000px'
 
       },
       height:{
