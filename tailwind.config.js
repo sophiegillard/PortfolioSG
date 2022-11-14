@@ -52,6 +52,9 @@ module.exports = {
         '3xl' : '2000px'
 
       },
+      grayscale: {
+        50: '80%'
+      },
       height:{
         'h-94vh' : '94vh'
       }
